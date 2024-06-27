@@ -1,0 +1,50 @@
+@font-face {
+  font-family: trollFont;
+  src: url(./fonts/Requiem.ttf);
+}
+*{
+  margin:0;
+  padding:0;
+}
+.project-title{
+  font-family: trollFont;
+  font-size:13vmin;
+}
+.trollhole, .whack-a-troll{
+  font-family: trollFont;
+  font-size:6vmin;
+}
+.back-text{
+  font-family: trollFont;
+  font-size:5vmin;
+  font-weight:bold;
+  text-align: center;
+}
+.whack-title{
+  font-family: trollFont;
+  font-size:10vmin;
+  text-align: center;
+}
+.timer, .whack-counter, .start-button{
+  font-family: trollFont;
+  font-size: 5vmin;
+}
+.start-button, .play-again-button{
+  font-weight:bold;
+  font-size:4vmin;
+}
+.score-text{
+  font-family: trollFont;
+  font-size:10vmin;
+}
+.troll-scroll{
+  font-family: trollFont;
+  font-size: 6vmin;
+}
+.text{
+  font-size: 2.5vmin;
+}
+.home-page, .source-code{
+  font-family:trollFont;
+  font-size:2vmin;
+}

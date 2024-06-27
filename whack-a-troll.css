@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+}
+.background{
+  background-image: url(./images/whack-a-troll-background.webp);
+  z-index: 1;
+  height:100vh;
+  background-size: cover;
+  filter:brightness(50%);
+}
+.game-board{
+  width:80%;
+  height:80vmin;
+  border:solid darkslategrey 1px;
+  position: absolute;
+  top:15vmin;
+  left:50%;
+  transform: translate(-50%);
+  border-radius: 5%;
+  background-color: gray;
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+.game-data{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid darkslategray 1px;
+}
+.start-button, .play-again-button{
+  border-radius: 5%;
+  margin:1vmin;
+  padding:1vmin;
+  width:25vmin;
+}
+.start-button:hover, .play-again-button:hover{
+  background-color: grey;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.start-button:active, .play-again-button:active{
+  background-color: rgb(82, 82, 82);
+}
+.whack-area{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin:2vmin;
+  position: relative;
+  z-index: -3;
+}
+.troll-box{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: -2;
+}
+.troll-wall{
+  width:100%;
+  height:50%;
+  background-image: url(./images/dark-brick-wall.jpg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.troll{
+  position: relative;
+  z-index: -1;
+  width:5.5vmin;
+  transition: .3s ease;
+}
+.high-score-list{
+  width: 80%;
+  height:80%;
+  border: solid darkslategray 1px;
+  background-color: darkgray;
+  margin: auto;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.back-arrow{
+  position: absolute;
+  top:0;
+  left:0;
+  width:15vmin;
+  transform: rotateZ(180deg);
+}
+.back-arrow:hover{
+  width:16vmin;
+  cursor:pointer;
+}
+.back-arrow:active{
+  width:15vmin;
+}
+
+@media (max-width:1000px){
+  .back-arrow{
+    top:90%;
+  }
+}

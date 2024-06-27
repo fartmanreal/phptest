@@ -1,0 +1,94 @@
+*{
+  margin:0;
+  padding:0;
+}
+.background{
+  width:100%;
+  height:100vh;
+  background-image: url(./images/foliage.jpg);
+  filter:brightness(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll{
+  width:95%;
+  height: 90%;
+}
+.scroll-text-box{
+  position: absolute;
+  width:70%;
+  height:80%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+.top-section-text{
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.troll{
+  width:14vmin;
+  height:20vmin;
+  padding:1vmin;
+}
+.time-machine{
+  width: 25vmin;
+  height:25vmin;
+  padding:1vmin;
+  border-radius: 15%;
+}
+.text{
+  color:black;
+  text-align: center;
+  padding:1vmin;
+}
+.troll-sign{
+  width:40vmin;
+  padding:1vmin;
+  border-radius: 15%;
+}
+.right-box{
+  width: 100%;
+  height:100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+.button-box{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-page, .source-code{
+  border-radius: 15%;
+  padding:1vmin;
+}
+.home-page:hover, .source-code:hover{
+  background-color: grey;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.home-page:active, .source-code:active{
+  background-color: rgb(82, 82, 82);
+}
+.left-box{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-section-text{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:1000px){
+  .text{
+    font-size:2vmin;
+  }
+}
